@@ -1,1 +1,112 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fffefe;
+    height: 100vh;
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  h1 { text-align: center }
+  h5 { text-align: center }
+  h6 { text-align: center }
+  .patientname {
+    padding : 16px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .patientbirth {
+    padding : 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .patientgender {
+    padding : 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .patientaddress {
+    padding : 16px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .patientrelationship {
+    padding : 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .patientstatus {
+    padding : 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .patientcondition {
+    padding : 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .patientconditionemployment {
+    padding : 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .patientconditionautoaccident {
+    padding : 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .patientconditionotheraccident {
+    padding : 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .patientinsurancecompany {
+    padding : 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .claimsubmit {
+    padding: 16px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }

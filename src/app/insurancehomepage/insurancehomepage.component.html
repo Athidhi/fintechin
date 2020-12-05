@@ -1,0 +1,117 @@
+<br>
+<br>
+<div>
+    <form [formGroup]="secondForm" (ngSubmit)="onSubmit()" >
+    <h1>Insurance Claim Form</h1>
+    <div class="patientname">
+    <h5>Patient's Name</h5>
+    <label for="fname">Firstname: </label>
+    <input type="text" formControlName="firstname" placeholder="Firstname">
+    <label for="lname">Last name:</label>
+    <input type="text" formControlName="lastname" placeholder="Lastname"><br><br>
+    </div>
+    <h5>Patient's Birth Date</h5>
+    <div class="patientbirth">
+    <label for="birthday" >Birthday:</label>
+    <input type="date" formControlName="birthday" name="birthday">
+    </div>
+    <h5>Patient's Gender</h5>
+    <div class = "patientgender" >
+    <ul style="list-style-type:none;">  
+    <input type="radio" formControlName="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" formControlName="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" formControlName="other" name="gender" value="other">
+    <label for="other">Other</label>
+    </ul>  
+    </div>
+    
+    <div class="patientaddress">
+    <h5>Patient's Address</h5>
+    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+    <input type="text" formControlName="adr" name="address" placeholder="542 W. 15th Street">
+    <label for="city"><i class="fa fa-institution"></i> City</label>
+    <input type="text" formControlName="city" name="city" placeholder="New York">
+    <label for="state">State</label>
+    <input type="text" formControlName="state" name="state" placeholder="NY">
+    <label for="zip">Zip</label>
+    <input type="text" formControlName="zip" name="zip" placeholder="10001">
+    <h5>Patient's Phone Number</h5>
+    <label for="phone">Enter a phone number:</label>
+    <input type="tel" formControlName="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        required><br>
+    <small>Format: 123-45-678</small><br>
+    </div>
+    <h5>Patient's Relationship to insured</h5>
+    <div class="patientrelationship">
+    <ul style="list-style-type:none;"> 
+    <input type="radio" formControlName="self" name="relation" value="self">
+    <label for="self">Self</label><br>
+    <input type="radio" formControlName="spouse" name="relation" value="spouse">
+    <label for="spouse">Spouse</label><br>
+    <input type="radio" formControlName="child" name="relation" value="child">
+    <label for="child">Child</label><br>
+    <input type="radio" formControlName="otherstatus" name="relation" value="other">
+    <label for="other">Other</label>
+    </ul>
+    </div>
+    <h5>Patient's Status</h5>
+    <div class="patientstatus">
+        <ul style="list-style-type:none;"> 
+    <input type="checkbox" formControlName="single" name="single" value="single">
+    <label for="single"> Single </label><br>
+    <input type="checkbox" formControlName="married" name="married" value="married">
+    <label for="married"> Married </label><br>
+    <input type="checkbox" formControlName="employed" name="employed" value="employed">
+    <label for="employed"> Employed </label><br>
+    <input type="checkbox" formControlName="unemployed" name="unemployed" value="unemployed">
+    <label for="unemployed"> UnEmployed </label><br>
+    <input type="checkbox" formControlName="fulltimestudent" name="fulltimestudent" value="fulltimestudent">
+    <label for="fulltimestudent"> Full Time Student</label><br>
+    <input type="checkbox" formControlName="unemployed" name="parttimestudent" value="parttimestudent">
+    <label for="parttimestudent"> Part Time Student </label><br><br>
+        </ul>
+    </div>
+    <h5>Is Patient's Condition Related To</h5>
+     <br>
+    <h6>Employment </h6>
+    <div class = "patientconditionemployment">
+        <ul style="list-style-type:none;">
+    <input type="radio" formControlName="employmentyes" name="employment" value="yes">
+    <label for="yes">Yes</label><br>
+    <input type="radio" formControlName="employmentno" name="employment" value="no">
+    <label for="no">No</label> <br>
+    </ul>
+    </div>
+
+    <h6>Auto Accident </h6> 
+    <div class = "patientconditionautoaccident">
+        <ul style="list-style-type:none;">
+    <input type="radio" formControlName="autoyes" name="autoaccident" value="yes">
+    <label for="yes">Yes</label><br>
+    <input type="radio" formControlName="autono" name="autoaccident" value="no">
+    <label for="no">No</label> <br>
+     </ul>
+    </div>
+    <h6>Other Accident </h6>
+    <div class = "patientconditionotheraccident">
+        <ul style="list-style-type:none;">  
+    <input type="radio" formControlName="otheryes" name="otheraccident" value="yes" >
+    <label for="yes">Yes</label><br>
+    <input type="radio" formControlName="otherno" name="otheraccident" value="no">
+    <label for="no">No</label> <br>
+    </ul>
+    </div>
+    <h6>Select Insurance Provider</h6>
+    <div class = "patientinsurancecompany">
+    <select formControlName="insurancecompany">
+      <option>InsuranceCompany1</option>
+      <option>InsuranceCompany2</option>
+    </select>
+    </div>
+    <div class="claimsubmit">
+    <input type="submit" data-action="save" value="submit">
+    </div>
+</form>
+</div>
